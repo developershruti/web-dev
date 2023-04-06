@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+           display: flex;
+           /* /* flex-direction: row-reverse;  */
+           flex-wrap: wrap;
+            flex-wrap: wrap-reverse; 
+         justify-content: space-between;
+        }
+        .box1{ 
+            background-color: red;
+            height: 80vh;
+            width: 40vw;  
+            float: left;
+        }
+        .box2{  background-color: aqua;
+            height: 80vh;
+            width: 40vw;  
+            float: right;
+        }
+        ul{
+            background-color: black;
+        }
+        li{
+          
+            color: white;
+            display: inline-flex;
+
+            padding:  33px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1"> box1  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo doloribus excepturi fuga iure tempore iste modi unde molestiae voluptatem non veritatis voluptas rem repudiandae blanditiis dolor, error vitae ipsum sapiente.</div>
+        <div class="box2">box2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, laborum nam. Quos sit ipsa iure. Praesentium earum optio quam eligendi quidem, reprehenderit ut possimus a, voluptatum eius, autem incidunt ipsa!</div>
+    </div>
+</body>
+</html>
