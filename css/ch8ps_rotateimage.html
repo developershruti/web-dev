@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+    
+        }
+        .box{  
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            color: white;
+            display: flex;
+            animation: widthanimate 3s ease-in-out 0.5s 4 alternate;
+        }
+        img{
+            animation: widthanimate .5s ease-in-out 0.5s 1 alternate;
+            animation: rotate .5s ease-in-out infinite;
+           
+        }
+        @keyframes widthanimate { 
+            from{
+                width: 30px;
+                height: 30px;
+            }
+            to{
+                width: 400px;
+                height: 400px;
+            }
+            
+        } 
+        @keyframes widthanimated2 {
+            0%{
+                width: 30px;
+                height: 30px;
+            }
+            20%{
+                width: 130px
+                
+            }
+            100%{
+                width: 1130px;
+                height: 1130px;
+            }
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box">This is box -->
+            <img src="draa.jpg" alt="" width="344px">
+ 
+        </div>
+    </div>
+</body>
+</html>
